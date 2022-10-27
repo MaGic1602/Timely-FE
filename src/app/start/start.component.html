@@ -1,0 +1,15 @@
+
+<div class="daydetail">
+    <button button mat-button color="primary" type="button" label="Click" class="btn"(click)="showTable();addSessions()">Start time tracking</button>
+    <div>
+        <app-table [show]="showTableVar"></app-table>
+        
+       
+    </div>
+
+    <form [formGroup]="projectForm">
+        <input type = "hidden" formControlName="startDate" [ngModel]="getTime().toISOString()"/>
+          
+    </form>
+</div>
+

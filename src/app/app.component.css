@@ -1,0 +1,23 @@
+/*.table
+{
+    height: 100px;
+    
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    
+  
+ 
+}
+.thead,td
+{
+ height:30px;
+
+ border-bottom: 1px solid #ddd;
+
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+*/
+.example-spacer {
+    flex: 1 1 auto;
+  }

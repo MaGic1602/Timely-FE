@@ -1,0 +1,21 @@
+WORK SESSION COMPONENTS:
+-->start/end date and time
+-->duration --> end-start
+-->name of the project
+-->start button
+-->end button
+
+Clicking on start button time tracking begins.
+Clicking on stop button, dialog appears which asks for
+project name
+
+-->stop timer-->when clicked, user has a list of completed 
+projects with all the information
+
+ADD PROJECT TO DB-->done
+DELETE PROJECT FROM DB-->done
+
+to do:
+-->throw exception if {id} for update not found
+
+UI --> Component --> Service(sends HTTP requests) --> (server)Controller --> Service--> DB

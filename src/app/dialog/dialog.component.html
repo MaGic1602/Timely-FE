@@ -1,0 +1,30 @@
+<h1 mat-dialog-title>Stop project</h1>
+<div mat-dialog-content>
+  <form [formGroup]="projectForm">
+    <mat-form-field appearance="legacy">
+      <mat-label>Enter project name</mat-label>
+      <input
+        formControlName="sessionName"
+        matInput
+        placeholder="Enter project Name"
+      />
+    </mat-form-field>
+
+    <input
+      type="hidden"
+      formControlName="endDate"
+      [ngModel]="getTime().toISOString()"
+    />
+    <!-- <input 
+      type="hidden"
+      formControlName="duration"
+      [ngModel]="getTime().toISOString()"
+    />
+-->
+
+    <div mat-dialog-action [align]="'end'">
+      <button mat-raised-button (click)="updateSessions()">stop</button>
+    </div>
+    <!--{{actionButton}}-->
+  </form>
+</div>
